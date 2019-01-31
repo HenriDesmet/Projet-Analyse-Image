@@ -124,7 +124,7 @@ public class MainMenuPhoto extends AppCompatActivity implements View.OnClickList
           try {
               Bitmap srcBmp = BitmapFactory.decodeStream(this.getContentResolver().openInputStream(selectedImageUri), null, null);
               //imageView.setImageBitmap(srcBmp);
-              if(true){ //todo check if landscape or not
+              if(true){ //todo check if landscape or not trouver comment savoir si landscape ou non
                   Matrix matrix = new Matrix();
                   matrix.postRotate(90);
                   Bitmap rotated = Bitmap.createBitmap(srcBmp, 0, 0, srcBmp.getWidth(), srcBmp.getHeight(),
