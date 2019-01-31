@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    tools:context=".MainMenuPhoto">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="2">
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+
+        android:textColor="@android:color/white"
+        android:text="Take a picture"
+        />
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+
+            android:text="Go to gallery"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+
+
+    <Button
+        android:id="@+id/btnAnalyse"
+        android:layout_weight="1"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+
+        android:textColor="@android:color/white"
+        android:text="Analyse picture"
+        />
+
+
+
+</LinearLayout>
