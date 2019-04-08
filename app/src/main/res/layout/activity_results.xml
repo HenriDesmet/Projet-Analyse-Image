@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    tools:context=".ResultsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/initialPicText"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:text="Image to compare :"
+                android:gravity="center"
+                />
+            <ImageView
+                android:id="@+id/initialPic"
+                android:layout_width="350dp"
+                android:layout_height="400dp" />
+
+            <TextView
+                android:id="@+id/responsePicText"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:text="Analyse Result :"
+                android:gravity="center"
+                />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="350dp"
+                android:layout_height="400dp"
+                />
+            <TextView
+                android:id="@+id/textDetails"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="Image Details: "
+                />
+
+            <TextView
+                android:id="@+id/scoreResult"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <Button
+                    android:id="@+id/previousPic"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:text="Previous Picture"
+                    />
+
+                <Button
+                    android:id="@+id/nextPic"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="Next Picture"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
